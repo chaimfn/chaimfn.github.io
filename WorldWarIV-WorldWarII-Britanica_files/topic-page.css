@@ -1,0 +1,11 @@
+:root{--100vh: 100vh}:root{--100vh: 100vh}.new-topic[data-leg=A] .extra-content,.new-topic[data-leg=B] .extra-content{border-top:solid 6px var(--blue)}@media(min-width: 672px){.reading-channel{container-name:reading-channel;container-type:inline-size}}@media(max-width: 671.98px){.new-topic .before-article{display:block;margin-top:20px}}.new-topic .extra-content{line-height:23px;padding:25px 0}.new-topic aside .md-content-module-right{margin:0 auto 200px auto;line-height:20px}.rr-module:last-child .new-topic aside .md-content-module-right{margin-bottom:0 !important}.new-topic .media-overlay-link{cursor:pointer}.new-topic .media-overlay-link.asmref{display:inline}.new-topic .concise-gist strong{font-weight:normal}.infinite-pagination .right-rail-ad:last-child{margin-bottom:30px;position:sticky;top:77px}@media(min-width: 672px){.infinite-pagination-button,.topic-content,.topic-header{background-color:var(--white)}}
+:root{--100vh: 100vh}.Flyout{background-color:var(--navy-dark);color:var(--white);left:0;position:fixed;right:0}.Flyout a:not(.btn):hover{text-decoration:underline}
+.AnonymousOrgDropdownOptions{background-color:rgba(0,0,0,0)}
+.AnonymousUserDropdownOptions{background-color:rgba(0,0,0,0)}
+.AuthenticatedOrgDropdownOptions{background-color:rgba(0,0,0,0)}
+.AuthenticatedUserDropdownOptions{background-color:rgba(0,0,0,0)}
+:root{--100vh: 100vh}.UserDropdownFlyout{top:47px;width:320px;z-index:1070}@media(max-width: 671.98px){.UserDropdownFlyout{overflow-y:auto;width:100%}}
+
+.VideoPlayer .jwplayer.jw-flag-aspect-mode{height:100% !important}
+
+/*# sourceMappingURL=topic-page.css.map*/

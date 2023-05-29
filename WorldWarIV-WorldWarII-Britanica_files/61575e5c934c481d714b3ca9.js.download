@@ -1,0 +1,64 @@
+(function () {
+  'use strict';
+
+  // Encyclopedia Britannica
+
+  let cafeMediaQuizIntroObserverSet = false;
+
+  let buttonFound = false;
+
+  const cafeMediaEBQuizObserver = new MutationObserver(() => {
+    if (!buttonFound) {
+      document.querySelectorAll('button').forEach((button) => {
+        if (button.innerText === 'Next') {
+          button.addEventListener(
+            'click',
+            () => {
+              window.adthrive.refreshSlots();
+
+              buttonFound = false;
+            },
+            {
+              once: true,
+            }
+          );
+
+          buttonFound = true;
+        }
+      });
+    }
+  });
+
+  const cafeMediaEBQuizIntroObserver = new MutationObserver(() => {
+    if (
+      document.querySelector('div[data-testid="QuestionView"]') &&
+      !cafeMediaQuizIntroObserverSet
+    ) {
+      cafeMediaEBQuizObserver.observe(
+        document.querySelector('div[data-testid="QuestionView"]'),
+        {
+          childList: true,
+          subtree: true,
+          attributes: true,
+        }
+      );
+
+      cafeMediaQuizIntroObserverSet = true;
+    }
+  });
+
+  if (document.location.pathname.includes('/quiz/')) {
+    cafeMediaEBQuizIntroObserver.observe(document.querySelector('body'), {
+      childList: true,
+      subtree: true,
+      attributes: true,
+    });
+
+    setTimeout(() => {
+      window.adthrive.slots._slots.forEach((_value, key) => {
+        window.adthrive.slotManager.updateRefreshTimeout(key, 0);
+      });
+    }, 5000);
+  }
+
+}());

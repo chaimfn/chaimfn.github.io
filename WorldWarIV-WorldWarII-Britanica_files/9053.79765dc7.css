@@ -1,0 +1,7 @@
+:root{--100vh: 100vh}.CategoriesTab{max-height:calc(100vh - 90px);overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}@media(max-width: 671.98px){.CategoriesTab{padding-bottom:200px}}
+:root{--100vh: 100vh}.FeaturesTab{max-height:calc(100vh - 90px);overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}@media(max-width: 671.98px){.FeaturesTab{padding-bottom:200px}}
+:root{--100vh: 100vh}:root{--100vh: 100vh}.HamburgerMenu{top:47px;z-index:99999}@media(max-width: 671.98px){.HamburgerMenu .scrollable{overflow-y:scroll;white-space:nowrap;-webkit-overflow-scrolling:touch}.HamburgerMenu .scrollable::-webkit-scrollbar{display:none}}.subscriptionPromo{bottom:0;left:0;position:fixed;right:0;width:100%;z-index:99999}
+:root{--100vh: 100vh}.NewTab{max-height:calc(100vh - 90px);overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}@media(max-width: 671.98px){.NewTab{padding-bottom:200px}}
+:root{--100vh: 100vh}.VideoTab{max-height:calc(100vh - 90px);overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}@media(max-width: 671.98px){.VideoTab{padding-bottom:200px}}
+
+/*# sourceMappingURL=9053.79765dc7.css.map*/
